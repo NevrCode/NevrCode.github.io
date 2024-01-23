@@ -23,6 +23,7 @@ fetch(apiUrl)
   })
   .then(data => {
     console.log(data);
+      document.getElementById('apiData').innerHTML = JSON.stringify(data, null, 2);
   })
   .catch(error => {
     console.error('Error:', error);
